@@ -1,31 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- <style>
-        html{
-        scroll-behavior: smooth;
-    }
-    </style>
-     -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memoir</title>
     <!-- <link rel="stylesheet" href="https://fonts.google.com/specimen/Parisienne?preview.text=Memento%20by%20Memoir&preview.text_type=custom"> -->
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="images/M.PNG">
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
 </head>
 
 <body>
     <header class ="header">
-        <h1>Memoir</h1>
+        <h1>Memoir     </h1>
         <!-- <h3>Creators of Memento</h3>  -->
     <nav class = "navbar">
         <div class="container">
               <ul class = "nav-menu">
-                <li class = "nav-item"><a class="nav-link1">Features</a></li>
-                <li class = "nav-item"><a class="nav-link2">About Us</a></li>
-                <li class = "nav-item"><a class="nav-link3">Contact Us</a></li>
+                <li class = "nav-item"><a class="nav-link1">Memento</a></li>
+                <li class = "nav-item"><a class="nav-link2">Features</a></li>
+                <li class = "nav-item"><a class="nav-link3">About Us</a></li>
               </ul>
         </div>
         <div class="hamburger">
@@ -41,22 +34,51 @@
     <div class = "box1">
         <h2>Memento <span style = "font-family:'Rasa'; font-size: medium;"> by Memoir</span></h2>
         
-            <img src = "images/desktop1.PNG" style="height: 150px;">
+            <img src = "images/desktop1.PNG" style="height: 150px; padding-bottom: 5px;">
             <p>Memento is a free-to-use social media that allows users to create and share virtual scrapbooks.</p>        
         <p>words words words words and more words</p>
         <button>Try it here</button>
     </div>  
 </div>
-    <!-- </div> -->
 
     <div class = "bannertwo">
-        <div class = "box1">
+        <div class = "box2">
 
-            <div id="parent"> 
+            <div class = "mySlides fade">
+                <div class = "numbertext">1 / 3</div>
+                <img src="images/desktop1.PNG" style="max-width: 70%;height: 20%;max-height:400px;padding-left: 25%;">
+                <div class="text">Customise your own scrapbook with text, images, shapes and drawing</div>
+            </div>
+
+            <div class = "mySlides fade">
+                <div class = "numbertext">2 / 3</div>
+                <img src="images/desktop2.PNG" style="max-width: 70%;height: 20%;max-height:400px;padding-left: 25%;">
+                <div class="text">Share your scraps with family and friends!</div>
+            </div>
+
+            <div class = "mySlides fade">
+                <div class = "numbertext">3 / 3</div>
+                <img src="images/beach.jpg" style="max-width: 70%;height: 20%;max-height:400px;padding-left: 25%;">
+                <div class="text">Beach</div>
+            </div>
+
+            <a class = "prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class = "next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div style = "text-align: center;bottom: 0%;bottom: -400px;position: absolute;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <br>
+
+
+        
+            <!-- <div id="parent"> 
                 <div class="col">A new way to share memories</div> 
                 <div class="col">Column 2</div> 
-              </div> 
-
+              </div>  -->
             <!-- <div class = "sidebyside">
                 <p>
                     <img src = "images/desktop2.PNG" style = "height:100px; float:right;">
@@ -67,8 +89,8 @@
                 <img src = "images/desktop1.PNG" style = "height:100px; float:left;">
             </div> -->
             
-        </div>
     </div>
+    <!-- </div> -->
 
     <div class = "bannerthree">
         <div>
@@ -84,9 +106,9 @@
     </div>
     <footer>
         <h3 style = "color: black;">Thank you for visiting!</h2>
+        <h3 class ="nav-link4" style = "font-size:larger; cursor:pointer; font-family: rasa; margin-top: 10px;">Back to top</h3>
     </footer>
-    <a id="to_Top" href="#one"><div class="to-Top"></div></a>
-    <!-- <a id="to_Top" href="#one"><div class="to-Top"></div></a> -->
+    
 
     <script src="mainjs.js"></script>
 
